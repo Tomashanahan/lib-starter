@@ -1,5 +1,6 @@
 import path from 'path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -10,5 +11,16 @@ export default defineConfig({
     sourcemap: true,
     target: 'es6',
     minify: false
-  }
+  },
+  resolve: {
+    alias: {
+      '@src': path.resolve(__dirname, '/src')
+    }
+  },
+  plugins: [
+    dts({
+      outDir: 'dist',
+      exclude: ['**/*.test.ts', 'tests/', 'vitest.config.*']
+    })
+  ]
 })
