@@ -2,8 +2,6 @@
 
 The repository aims to provide a robust starting point with best practices for code quality and project configuration.
 
-
-
 ## Installation
 
 Install dependencies with yarn
@@ -11,11 +9,10 @@ Install dependencies with yarn
 ```bash
   yarn
 ```
-    
+
 ## Tech Stack
 
 Typescript, Striker, Vite, Vitest, Jusky, lint-staged
-
 
 ## Running Tests
 
