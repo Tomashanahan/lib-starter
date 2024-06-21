@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 coverage
+reports
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +24,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# stryker temp files
+.stryker-tmp
